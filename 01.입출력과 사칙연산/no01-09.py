@@ -3,4 +3,4 @@ print(int(a) + int(b))
 print(int(a) - int(b))
 print(int(a) * int(b))
 print(int(a) // int(b))
-print(int(a) % int(b));
+print(int(a) % int(b))
