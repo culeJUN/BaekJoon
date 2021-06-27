@@ -9,4 +9,4 @@ result = a * b
 print(r1)
 print(r2)
 print(r3)
-print(result);
+print(result)
