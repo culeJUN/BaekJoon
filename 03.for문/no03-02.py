@@ -5,4 +5,3 @@ for i in range(n) :
     x = int(x)
     y = int(y)
     print(str(x + y))
-    print(x)
