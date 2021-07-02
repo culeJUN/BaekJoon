@@ -42,5 +42,3 @@ while True :
     if i == len(s) :
         print(count)
         break
-
-
