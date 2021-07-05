@@ -13,3 +13,4 @@ for i in range(len(list_x)) :
 
 for i in range(len(list_n)) :
     print(list_n[i])
+    print()

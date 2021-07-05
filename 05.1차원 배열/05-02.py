@@ -4,3 +4,4 @@ for i in range(9) :
 
 print(max(list_a))
 print(list_a.index(max(list_a)) + 1)
+print()

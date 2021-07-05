@@ -12,3 +12,4 @@ for i in range(num) :
 
     average = people / inf[0] * 100
     print('%0.3f' % float(average) + '%')
+    print()
