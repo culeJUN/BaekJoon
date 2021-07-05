@@ -7,3 +7,4 @@ list_n = input().split()
 for i in list_n :
     if int(i) < x :
         print(i, end = ' ')
+    print()

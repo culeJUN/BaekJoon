@@ -9,3 +9,4 @@ for i in range(n) :
     sum += score[i]
 
 print(sum / n)
+print()

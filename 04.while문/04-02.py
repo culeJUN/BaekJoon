@@ -6,3 +6,5 @@ while True :
         print(x + y)
     except : 
         break
+    print()
+    print()

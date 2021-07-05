@@ -5,3 +5,5 @@ while True :
     if x == 0 and y == 0 :
         break
     print(x + y)
+
+    print()
