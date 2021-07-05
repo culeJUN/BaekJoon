@@ -7,3 +7,4 @@ else :
     sum = (1 + n) * (n // 2) + (n // 2 + 1)
 
 print(sum)
+print()
