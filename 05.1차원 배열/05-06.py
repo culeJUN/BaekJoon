@@ -13,4 +13,3 @@ for i in range(num) :
             score = 0
 
     print(total)
-    print()
