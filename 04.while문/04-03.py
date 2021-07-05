@@ -13,4 +13,3 @@ while 1 :
     temp = result
 
 print(count)
-print()
