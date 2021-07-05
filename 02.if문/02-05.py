@@ -12,3 +12,4 @@ else :
         h -= 1
     m += 15    
     print(str(h) + ' ' + str(m))
+    print()
