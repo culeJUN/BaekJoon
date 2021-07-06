@@ -11,3 +11,4 @@ for i in reversed(range(time)) :
     
 for i in range(time) :
     print(num[i])
+    print()
