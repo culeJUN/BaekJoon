@@ -8,4 +8,4 @@ for i in str(n) :
 list_num.sort(reverse = True) 
 
 for i in list_num :
-    print(i, end = '')
+    sys.stdout.write(str(i))
