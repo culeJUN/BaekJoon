@@ -53,5 +53,3 @@ for i in range(9) :
             zero.append((i, j))
             
 DFS(0)
-print()
-print(sudoku)
