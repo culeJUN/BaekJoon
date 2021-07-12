@@ -3,14 +3,14 @@ import sys
 def dfs(idx, cnt):
     global ans
     if cnt == n // 2:
-        team_a, team_b = 0, 0
+        start, link = 0, 0
         for i in range(n):
             for j in range(n):
                 if select[i] and select[j]:
-                    team_a += a[i][j]
+                    start += a[i][j]
                 elif not select[i] and not select[j]:
-                    team_b += a[i][j]
-        ans = min(ans, abs(team_a - team_b))
+                    link += a[i][j]
+        ans = min(ans, abs(start - link))
 
     for i in range(idx, n):
         if select[i]:
