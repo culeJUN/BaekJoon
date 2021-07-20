@@ -3,17 +3,12 @@ type = []
 count = 0
 for i in range(num) :
     type.append(int(input()))
+type.sort(reverse=True)
 
-
-while True :
+for i in type :
     if money == 0 :
         break
-
-    if money % type[-1] == money :
-        type.pop()
-    else :
-        count += money // type[-1]
-        money -= type[-1] * (money // type[-1])
-        type.pop()
+    count += money // i
+    money %= i
 
 print(count)
