@@ -1,36 +1,28 @@
-import sys
-input = sys.stdin.readline
-
-while True :
-    stack = []
-    command = input()
-    if command == '.' :
+while True:
+    s = input()
+    if s == '.':
         break
+    stack = []
+    temp = True
+    for i in s:
+        if i == '(' or i == '[':
+            stack.append(i)
 
-    for i in range(len(command) - 1) :
-        if command[i] == '(' :
-            stack.append('(')
+        elif i == ')':
+            if not stack or stack[-1] != '(':       # 스택이 비어있거나 마지막이 '('이 아니라면
+                temp = False
+                break
+            elif stack[-1] == '(':
+                stack.pop()
 
-        elif command[i] == '[' :
-            stack.append('[')
+        elif i == ']':
+            if not stack or stack[-1] != '[':       # 스택이 비어있거나 마지막이 '['이 아니라면
+                temp = False
+                break
+            elif stack[-1] == '[':
+                stack.pop()
 
-        elif command[i] == ')' :
-            if len(stack) == 0 :
-                break
-            elif stack[-1] == '(' :
-                del stack[-1]
-            else :            
-                break
-            
-        elif command[i] == ']' :
-            if len(stack) == 0 :
-                break
-            elif stack[-1] == '[' :
-                del stack[-1]
-            else :
-                break
-
-    if stack == [] :
-        print('YES')
-    else :
-        print('NO')
+    if temp == True and not stack:
+        print('yes')
+    else:
+        print('no')
