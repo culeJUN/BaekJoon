@@ -28,7 +28,7 @@ for i in range(case) :
             elif reverse % 2 == 1 :             # 뒤집었다면 맨뒤 pop
                 list_num.pop()
 
-    if reverse % 2 == 1 :               # 마지막에 뒤집어져있어야 된다면 뒤집어 주기
+    if reverse % 2 == 1 :                # 마지막에 뒤집어져있어야 된다면 뒤집어 주기
         list_num.reverse()
 
     if not error :
