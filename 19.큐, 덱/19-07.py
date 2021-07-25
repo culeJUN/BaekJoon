@@ -10,7 +10,7 @@ for i in range(case) :
     num = int(input())
     list_num = deque(input()[1:-2].split(","))
     if list_num[0] == '' :              # 비어있는 덱이면 ''이라고 들어오는거 방지
-        list_num.pop()
+        list_num.pop()  
         
     for j in command :
         if j == 'R' :                       # 매번 뒤집지 말고 그냥 뒤집었는지 확인
