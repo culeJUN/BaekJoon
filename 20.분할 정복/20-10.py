@@ -36,6 +36,7 @@ def short(m) :
                         continue
                     minimum = min(minimum, distance(temp[i], temp[j]))          # 위 세 경우가 다 아니라면 최소값이랑 좌표거리 비교후 저장
         return minimum
+        
 if n != len(points) :           # 중복이 있다는 뜻! 즉 최소 거리는 0이 된다.
     print(0)
 else :                 
