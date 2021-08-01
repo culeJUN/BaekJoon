@@ -13,7 +13,7 @@ while start <= end :
         line += i // mid
     
     if line >= N :
-        start = mid
+        start = mid + 1
     else :
         end = mid - 1
 
