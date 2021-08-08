@@ -19,4 +19,4 @@ for i in range(n) :
     else :
         data[low] = A[i]
 
-print(len(data) - 1)
+print(len(data) - 1) 
