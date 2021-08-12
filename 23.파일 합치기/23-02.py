@@ -1,5 +1,5 @@
 n = int(input())
-matrix = []
+matrix = [] 
 for _ in range(n) :
     matrix.append(list(map(int, input().split())))
 
@@ -15,4 +15,4 @@ for i in range(1, n) :
             dp[j][j+i] = min(dp[j][j+i],            # 이부분이 아이디어
                              dp[j][k] + dp[k+1][j+i] + matrix[j][0] * matrix[k][1] * matrix[j+i][1])        
 
-print(dp[0][-1])
+print(dp[0][-1]) 
