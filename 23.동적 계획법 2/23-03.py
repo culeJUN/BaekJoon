@@ -14,6 +14,6 @@ def dfs(x, y) :
             if 0 <= x + dx < m and 0 <= y + dy < n :
                 if M[x + dx][y + dy] < M[x][y] :
                     dp[x][y] += dfs(x + dx, y + dy)
-    return dp[x][y]
+    return dp[x][y] 
 
 print(dfs(0, 0)) 
