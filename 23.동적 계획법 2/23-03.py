@@ -16,4 +16,4 @@ def dfs(x, y) :
                     dp[x][y] += dfs(x + dx, y + dy)
     return dp[x][y] 
 
-print(dfs(0, 0)) 
+print(dfs(0, 0))
