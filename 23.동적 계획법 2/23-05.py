@@ -18,7 +18,7 @@ def dfs(sinkers, n, now, left, right) :     # (추 종류, 총 n개, 추가한 �
         dp[now][new] = 1
         return 0
 
-    if dp[now][new] == 0 :ㄴ
+    if dp[now][new] == 0 :
         dfs(sinkers, n, now + 1, left + sinkers[now], right)    # 왼쪽에 올리기
         dfs(sinkers, n, now + 1, left, right + sinkers[now])    # 오른쪽에 올리기
         dfs(sinkers, n, now + 1, left, right)                   # 안올리기
