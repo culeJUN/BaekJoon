@@ -19,4 +19,4 @@ for i in range(1, len(cost)) :
 if M != 0 :
     print(result)
 else :
-    print(0)
+    print(0) 
