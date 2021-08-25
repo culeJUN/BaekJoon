@@ -30,6 +30,6 @@ def bfs(v) :
                 q.append(i)
                 visit_list2[i] = 1
 
-dfs(1)
+dfs(v)
 print()
 bfs(v)
