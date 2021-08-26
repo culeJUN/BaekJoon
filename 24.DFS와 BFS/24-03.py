@@ -31,6 +31,6 @@ for i in range(line) :
 print(len(apt))
 print(apt)
 
-# apt.sort()
-# for i in apt :
-#     print(i)
+apt.sort()
+for i in apt :
+    print(i)
