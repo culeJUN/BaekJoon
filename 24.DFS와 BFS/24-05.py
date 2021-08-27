@@ -9,7 +9,7 @@ dx = [1, -1, 0, 0]
 dy = [0, 0, -1, 1]
 
 while queue :
-    a, b = queue[0][0], queue[0][1]
+    a, b = queue[0]
     del queue[0]
     for i in range(4) :
         x = a + dx[i]
