@@ -18,4 +18,4 @@ while queue :
             queue.append([x, y])
             maps[x][y] = maps[a][b] + 1
 
-print(maps[n - 1][m - 1])
+print(maps[n - 1][m - 1]) 
